@@ -1,4 +1,10 @@
-// create global variables
+//click event for timer button
+document.addEventListener("click", function() {
+    var btn = document.createElement("button");
+    btn.textContent = "Begin Quiz!";
+    document.body.appendChild(btn);
+})
+
 //I know I need an array  of questions to loop through
 var questions = [
     {
@@ -10,8 +16,19 @@ var questions = [
         answer: "a"
     },
 ]
+//create score variable to modify score in loop
+var score = 0
+//loop
+for(var i=0; i < questions.length; i++) {
+    var answers = window.prompt(questions[i].prompt)
+    if(answers == questions[i].answer) {
+        score++;
+        alert("CORRECT!");
+    }
+    else {
+        alert("INCORRECT!");
+    }
+}
 
-//click event for timer button
-document.getElementById("timer").addEventListener("click", function() {
-    var timeRemaining = 60;
-})
+
+
