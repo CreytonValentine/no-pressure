@@ -9,21 +9,31 @@
 //
 var wrongAnswer = 3;
 var correctAnswer = 2;
-var time = 60;
 var body = document.body;
-var buttonEl = document.createElement("button");
-buttonEl.textContent = "Begin Quiz";
-body.appendChild(buttonEl);
+var seconds = 60;
+//create button element in .html and assign id
+//create button variable for the id
+var btn = document.getElementById("btn");
+//when btn is clicked I want timer to start and the first question to appear
+//add click event to btn. create function for what happens (timer/question) when btn is clicked
+btn.addEventListener("click", countDown);
+//maybe use math object from module 3 for timer. OR use set interval?
+function countDown(event) {
+    var time = 
+    
+    
 
-//questions are appearing before button is clicked. gotta fix that
-    //attempt to create buttonEl handler and move array and loop inside?
-    //set time interval
-var beginQuiz = function(time) {
-    var startTimer = time - 1;
-    buttonEl.addEventListener("click", startTimer);
-
-    beginQuiz();
+    console.log("i was clicked");
 }
+//don't forget to call/start countdown
+countDown();
+
+
+    
+    
+
+   
+
 
 var questions = [
     {
