@@ -1,10 +1,10 @@
 // New Javascript
-var buttonEl = document.querySelector("#start-tiimer");
+var buttonEl = document.createElement("button");
 
 
 
 var buttonClick = function(event) {
-    //add event listener
+    
 
 }
 
