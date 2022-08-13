@@ -1,3 +1,27 @@
+// New Javascript
+var buttonEl = document.querySelector("#start-tiimer");
+
+
+
+var buttonClick = function(event) {
+    //add event listener
+
+}
+
+//create variable with a function to start timer. pass 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //quiz begins by pressing button
 //quiz ends when all questions are answered or there is no time left
 //start timer and display first question when button is pressed
